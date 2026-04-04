@@ -868,6 +868,133 @@ a:hover {
   transform: rotate(-4deg);
 }
 
+/* ---- Pickleball Game ---- */
+.pickleball-section {
+  padding: 6rem 0;
+  background: var(--brown);
+  color: var(--cream);
+}
+
+.pickleball-section .section-title {
+  color: var(--gold);
+}
+
+.pickleball-section .section-subtitle {
+  color: var(--cream);
+}
+
+.pickleball-arena {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.pickleball-scores {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.pb-score-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.pb-score-name {
+  font-family: var(--font-mono);
+  font-size: 0.55rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--cream);
+  opacity: 0.5;
+}
+
+.pb-score-num {
+  font-family: var(--font-heading);
+  font-size: clamp(2.5rem, 8vw, 4rem);
+  font-style: italic;
+  color: var(--gold);
+  line-height: 1;
+}
+
+.pb-score-divider {
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  color: rgba(252, 227, 227, 0.2);
+}
+
+#pickleballCanvas {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 10px;
+  border: 1px solid rgba(252, 227, 227, 0.12);
+  cursor: none;
+  display: block;
+}
+
+.pb-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.pb-btn {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--brown);
+  background: var(--gold);
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 2rem;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  transform: rotate(-1deg);
+}
+
+.pb-btn:hover {
+  background: var(--cream);
+  transform: rotate(0deg);
+}
+
+.pb-hint {
+  font-family: var(--font-mono);
+  font-size: 0.55rem;
+  letter-spacing: 0.1em;
+  color: rgba(252, 227, 227, 0.35);
+  text-transform: lowercase;
+}
+
+.pb-result {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.pb-result p {
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  font-style: italic;
+  color: var(--cream);
+  transform: rotate(-1.5deg);
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  #pickleballCanvas {
+    height: 240px;
+  }
+}
+
 /* ---- RSVP ---- */
 .rsvp {
   padding: 6rem 0;

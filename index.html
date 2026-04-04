@@ -250,6 +250,36 @@
     </div>
   </section>
 
+  <!-- Pickleball Game -->
+  <section id="pickleball" class="pickleball-section">
+    <div class="container">
+      <h2 class="section-title">Play Us</h2>
+      <p class="section-subtitle">first to 3 wins · beat us if you can</p>
+      <div class="pickleball-arena">
+        <div class="pickleball-scores">
+          <div class="pb-score-block">
+            <span class="pb-score-name">You</span>
+            <span class="pb-score-num" id="pbPlayerScore">0</span>
+          </div>
+          <div class="pb-score-divider">—</div>
+          <div class="pb-score-block">
+            <span class="pb-score-name">S + H</span>
+            <span class="pb-score-num" id="pbCpuScore">0</span>
+          </div>
+        </div>
+        <canvas id="pickleballCanvas" width="700" height="380"></canvas>
+        <div class="pb-controls">
+          <button class="pb-btn" id="pbStartBtn">Serve</button>
+          <p class="pb-hint">Move your mouse (or finger) to control the left paddle</p>
+        </div>
+        <div class="pb-result" id="pbResult" style="display:none">
+          <p id="pbResultText"></p>
+          <button class="pb-btn" id="pbRestartBtn">Play Again</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- RSVP -->
   <section id="rsvp" class="rsvp">
     <div class="container">
